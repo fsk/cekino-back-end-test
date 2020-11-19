@@ -18,15 +18,15 @@ public class SwaggerConfiguration {
     @Bean
     public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("com.adakapital"))
+                .apis(RequestHandlerSelectors.basePackage("com.cekino"))
                 .paths(PathSelectors.regex("/.*"))
                 .build().apiInfo(apiEndpointsInfo());
     }
 
     private ApiInfo apiEndpointsInfo() {
         return new ApiInfoBuilder()
-                .title("Spring Boot REST API with Spring Boot")
-                .description("Project for AdaKapital")
+                .title("REST API with Spring Boot and PostgreSQL")
+                .description("Project for CEKINO")
                 .contact(new Contact("Furkan Sahin Kulaksiz", "", "furkansahinkulaksiz@gmail.com"))
                 .license("Apache 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
