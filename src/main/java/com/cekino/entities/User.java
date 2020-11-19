@@ -32,7 +32,7 @@ public class User {
     private String email;
 
     @ApiModelProperty(value = "This property is USER NAME for USER model")
-    @Column(name = "USER_NAME")
+    @Column(name = "USER_NAME", unique = true)
     private String userName;
 
     @ApiModelProperty(value = "This property is AGE for USER model")
@@ -40,7 +40,7 @@ public class User {
     private Integer age;
 
     @ApiModelProperty(value = "This property is IDENTITY NUMBER for USER model. And this property must be 11 character.")
-    @Column(name = "IDENTITY_NUMBER", length = 11)
+    @Column(name = "IDENTITY_NUMBER", length = 11, unique = true)
     private String identityNumber;
 
     @ApiModelProperty(value = "This property is GENDER for USER model. And this property must be 1 charachter.")
