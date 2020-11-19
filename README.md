@@ -14,3 +14,4 @@ Exception class'ı için de aynısı yapıldı.
 2) Çözülemeyen bir hatadan dolayı (PostgreSQL hatası) kod deploy edilemedi.
 3) Swagger documentasyonu daha uygun yazılabilirdi.
 4) Branch mantığı ile github'a kodlar daha uygun bir biçimde atılabilirdi.
+5) Unit Test yazılabilirdi. Ve test coverage ile başarı durumu gözetilebilirdi.
