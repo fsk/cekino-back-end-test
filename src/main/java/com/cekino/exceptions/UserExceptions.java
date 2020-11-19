@@ -40,6 +40,8 @@ public class UserExceptions {
 
     public static final String UPDATE_NOT_DATE_OF_CREATE = BASE_EXCEPTION + " DATE of CREATED COULD NOT UPDATE.!";
 
+    public static final String UPDATE_NOT_DATE_OF_UPDATE = BASE_EXCEPTION + " DATE of UPDATED COULD NOT UPDATE.!";
+
     public static final String UPDATE_BY_ID_EXCEPTION = BASE_EXCEPTION + " AN ERROR OCCURED WHILE UPDATING THE RECORD.!";
 
     public static final String DELETE_BY_ID_EXCEPTION =  BASE_EXCEPTION + " AN ERROR OCCURED WHILE DELETING THE RECORD.!";

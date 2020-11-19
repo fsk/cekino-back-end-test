@@ -148,6 +148,11 @@ public class UserService {
                     + UserExceptions.UPDATE_NOT_DATE_OF_CREATE);
         }
 
+        if(userDetails.getUpdatedAt() != null) {
+            throw new Exception(UserExceptions.UPDATE_BY_ID_EXCEPTION
+                    + UserExceptions.UPDATE_NOT_DATE_OF_UPDATE);
+        }
+
         return ResponseEntity.ok(userRepository.save(user));
 
     }
